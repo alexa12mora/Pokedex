@@ -18,12 +18,18 @@ Asegúrate de tener Python y pip instalados en tu sistema. Se recomienda el uso 
 # Backend
 ## Pasos para configurar el entorno virtual
 ### 1: Clonar el Repositorio: 
+```bash
 git  clone https://github.com/alexa12mora/Pokedex.git
+```
+
 Acceder al proyecto : cd pokedex
 
 ### 2: Crear y Activar el Entorno Virtual:
+```bash
 python -m venv venv
 .\venv\Scripts\activate
+```
+
 
 ### 3: Instalar Dependencias:
 pip install -r requirements.txt
