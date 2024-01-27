@@ -21,8 +21,12 @@ class BasePokemonView(views.APIView):
             response = requests.get(url)
             response.raise_for_status()
             pokemon_data = response.json()
-            cache.set(url, pokemon_data)
+            # Altura de decímetros a metros
+            height_in_meters = float(pokemon_data['height']) / 10
 
+            # Peso de hectogramos a kilogramos
+            weight_in_kilograms = float(pokemon_data['weight']) / 10
+            cache.set(url, pokemon_data)
             return pokemon_data
         except requests.exceptions.RequestException as e:
             raise exceptions.APIException(f"Failed to fetch Pokemon data: {str(e)}")
