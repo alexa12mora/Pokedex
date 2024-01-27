@@ -32,11 +32,17 @@ python -m venv venv
 
 
 ### 3: Instalar Dependencias:
+```bash
 pip install -r requirements.txt
+```
+
 
 ## Configuración de la API
 ### 1: Ejecutar el Servidor de Desarrollo:
+```bash
 python manage.py runserver
+```
+
 La API estará disponible en http://127.0.0.1:8000/
 
 
