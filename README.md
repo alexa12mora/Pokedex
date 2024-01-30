@@ -73,7 +73,7 @@ cd Desktop/mi-proyecto
 ### Inicia el servidor HTTP con el siguiente comando:
 
 ```bash
-http-server -p 8000
+http-server -p 5500
 ```
 
 
